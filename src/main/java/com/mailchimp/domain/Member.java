@@ -22,7 +22,6 @@ import org.apache.commons.codec.binary.Hex;
  * @author eamoralesl
  */
 @JsonIgnoreProperties(ignoreUnknown = true)//TODO: remove this when all properties are add
-@Accessors(chain = true)
 public class Member {
 
     public static enum EmailType {
