@@ -78,7 +78,7 @@ public class Member {
     @JsonProperty("merge_fields")
     @Getter
     @Setter
-    private Map<String, String> mergeFields = new HashMap<>();
+    private Map<String, Object> mergeFields = new HashMap<>();
 
 //    @JsonProperty
 //    @Getter
@@ -163,11 +163,11 @@ public class Member {
         return mergeFields.containsKey(name);
     }
 
-    public String getMergeField(String name) {
+    public Object getMergeField(String name) {
         return mergeFields.get(name);
     }
 
-    public void putMergeField(String name, String value) {
+    public void putMergeField(String name, Object value) {
         mergeFields.put(name, value);
     }
 
@@ -234,11 +234,11 @@ public class Member {
         this.status = status;
     }
 
-    public Map<String, String> getMergeFields() {
+    public Map<String, Object> getMergeFields() {
         return mergeFields;
     }
 
-    public void setMergeFields(Map<String, String> mergeFields) {
+    public void setMergeFields(Map<String, Object> mergeFields) {
         this.mergeFields = mergeFields;
     }
 
