@@ -23,7 +23,10 @@ public enum SubscribeStatus {
     /**
      * Used to archive a subscriber.
      */
-    CLEANED;
+    CLEANED,
+
+
+    TRANSACTIONAL;
 
     @JsonValue
     public String toJson() {
